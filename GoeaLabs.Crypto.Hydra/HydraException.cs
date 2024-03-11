@@ -33,9 +33,7 @@ public class HydraException : Exception
     /// </summary>
     /// <param name="errCode">Error code.</param>
     /// <param name="message">Message.</param>
-    public HydraException(HydraErrorCode errCode, string? message = null) 
-        : base(message)
-    {
-        ErrorCode = errCode;
-    }
+    /// <param name="innerEx">Inner exception.</param>
+    public HydraException(HydraErrorCode errCode, string? message = null, Exception? innerEx = null) 
+        : base(message, innerEx) { ErrorCode = errCode; }
 }
