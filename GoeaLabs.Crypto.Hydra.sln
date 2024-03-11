@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoeaLabs.Crypto.Hydra", "GoeaLabs.Crypto.Hydra\GoeaLabs.Crypto.Hydra.csproj", "{EA693D08-656B-419D-9C68-C52E8157D971}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{DC86BB08-A527-4850-95AA-C05C0C21F29A}"
+	ProjectSection(SolutionItems) = preProject
+		.config\release.json = .config\release.json
+		.config\release.md = .config\release.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{F3881B4A-2422-4FF7-85B4-33A2FE852118}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{AEE32396-B0F9-4BC4-91E3-6E3F9B8E5E68}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\codeql.yml = .github\workflows\codeql.yml
+		.github\workflows\release.yml = .github\workflows\release.yml
+		.github\workflows\test.yml = .github\workflows\test.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoeaLabs.Crypto.Hydra.Tests", "GoeaLabs.Crypto.Hydra.Tests\GoeaLabs.Crypto.Hydra.Tests.csproj", "{1F9FF1DD-3536-48F5-9AAB-3C811F6221C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoeaLabs.Crypto.Hydra.Examples", "GoeaLabs.Crypto.Hydra.Examples\GoeaLabs.Crypto.Hydra.Examples.csproj", "{FAE3B630-8085-477F-9B16-0F11160C3B77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoeaLabs.Crypto.Hydra.Benchmarks", "GoeaLabs.Crypto.Hydra.Benchmarks\GoeaLabs.Crypto.Hydra.Benchmarks.csproj", "{42A74395-DD71-463A-A21A-A6E6A1B52A1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA693D08-656B-419D-9C68-C52E8157D971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA693D08-656B-419D-9C68-C52E8157D971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA693D08-656B-419D-9C68-C52E8157D971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA693D08-656B-419D-9C68-C52E8157D971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9FF1DD-3536-48F5-9AAB-3C811F6221C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9FF1DD-3536-48F5-9AAB-3C811F6221C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9FF1DD-3536-48F5-9AAB-3C811F6221C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9FF1DD-3536-48F5-9AAB-3C811F6221C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAE3B630-8085-477F-9B16-0F11160C3B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE3B630-8085-477F-9B16-0F11160C3B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE3B630-8085-477F-9B16-0F11160C3B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE3B630-8085-477F-9B16-0F11160C3B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A74395-DD71-463A-A21A-A6E6A1B52A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A74395-DD71-463A-A21A-A6E6A1B52A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A74395-DD71-463A-A21A-A6E6A1B52A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A74395-DD71-463A-A21A-A6E6A1B52A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AEE32396-B0F9-4BC4-91E3-6E3F9B8E5E68} = {F3881B4A-2422-4FF7-85B4-33A2FE852118}
+	EndGlobalSection
+EndGlobal
