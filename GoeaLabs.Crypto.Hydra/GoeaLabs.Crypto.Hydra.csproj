@@ -36,7 +36,7 @@
 
     <ItemGroup>
         <PackageReference Include="GoeaLabs.Bedrock" Version="3.2.0" />
-        <PackageReference Include="GoeaLabs.Chaos" Version="0.5.0-rc.5" />
+        <PackageReference Include="GoeaLabs.Crypto.Chaos" Version="1.0.0-rc.1" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

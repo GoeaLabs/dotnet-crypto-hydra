@@ -16,7 +16,7 @@
 
 using System.Runtime.CompilerServices;
 using GoeaLabs.Bedrock.Extensions;
-using GoeaLabs.Chaos;
+using GoeaLabs.Crypto.Chaos;
 
 namespace GoeaLabs.Crypto.Hydra;
 

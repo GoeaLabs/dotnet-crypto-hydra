@@ -1,4 +1,4 @@
-﻿using GoeaLabs.Chaos;
+﻿using GoeaLabs.Crypto.Chaos;
 
 namespace GoeaLabs.Crypto.Hydra.Tests;
 
@@ -28,7 +28,7 @@ public class HydraEngineTests
     private static int Random(int minVal, int maxVal)
     {
         Span<uint> kernel = stackalloc uint[ChaosEngine.KernelLen];
-        ChaosEngine.Make(kernel);
+        ChaosEngine.NewKernel(kernel);
 
         const int rounds = HydraEngine.DefRounds;
         var locale = new ChaosLocale();
