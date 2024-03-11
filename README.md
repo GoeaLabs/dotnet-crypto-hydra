@@ -122,7 +122,7 @@ engine.Decrypt(encrypted, decrypted);
 Console.WriteLine($"Decrypted HEX: {Convert.ToHexString(decrypted)}");
 ```
 
-### Plugging-in custom signers
+## Plugging-in custom signers
 
 Plugging-in a new signer is as simple as implementing `IHydraSigner` interface, eg:
 
@@ -157,23 +157,21 @@ public class MyCustomAlgo : IHydraSigner
 }
 ```
 
-## Signer performance comparison
+## Built-in signer performance
 
 The following benchmarks have been performed on a development machine. They are only meant to compare the performance of
 the built-in `IHydraSigner` implementations relative to each other and not as an indicator of absolute encryption
 performance.
 
+
 `IHydraSigner` encryption performance for 100, 1000, and 1000000 bytes with 20 rounds.
 
 ```
-
 BenchmarkDotNet v0.13.12, Ubuntu 23.10 (Mantic Minotaur)
 Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 .NET SDK 8.0.102
   [Host]     : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX2
   DefaultJob : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX2
-
-
 ```
 
 | Method               | Bytes   |          Mean |      Error |     StdDev | Rank | Allocated |
@@ -188,16 +186,15 @@ Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 | Hydra20Sha384Encrypt | 1000000 | 11,769.714 μs | 16.2679 μs | 15.2170 μs |    8 |      12 B |
 | Hydra20Sha256Encrypt | 1000000 | 12,478.181 μs | 11.2396 μs | 10.5135 μs |    9 |      12 B |
 
+
 `IHydraSigner` decryption performance for 100, 1000, and 1000000 bytes with 20 rounds.
 
 ```
-
 BenchmarkDotNet v0.13.12, Ubuntu 23.10 (Mantic Minotaur)
 Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 .NET SDK 8.0.102
   [Host]     : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX2
   DefaultJob : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX2
-
 
 ```
 
