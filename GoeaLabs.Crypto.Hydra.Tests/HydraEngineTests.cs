@@ -42,7 +42,7 @@ public class HydraEngineTests
     [TestMethod]
     [DataRow(HydraEngine.KeyLength - 1, HydraEngine.DefRounds)]
     [DataRow(HydraEngine.KeyLength + 1, HydraEngine.DefRounds)]
-    public void Constructor_throws_HydraException_if_incorrect_key_length(int length, int rounds)
+    public void Constructor_throws_if_incorrect_key_length(int length, int rounds)
     {
         var tested = new Exception();
 
@@ -64,7 +64,7 @@ public class HydraEngineTests
     [TestMethod]
     [DataRow(HydraEngine.DefRounds + 1)]
     [DataRow(HydraEngine.DefRounds - 1)]
-    public void Constructor_throws_HydraException_if_incorrect_number_of_rounds(int rounds)
+    public void Constructor_throws_if_incorrect_number_of_rounds(int rounds)
     {
         var tested = new Exception();
 
@@ -85,7 +85,7 @@ public class HydraEngineTests
     [TestMethod]
     [DataRow(HydraEngine.KeyLength - 1)]
     [DataRow(HydraEngine.KeyLength + 1)]
-    public void NewKey_throws_HydraException_if_incorrect_key_length(int length)
+    public void NewKey_throws_if_incorrect_key_length(int length)
     {
         var tested = new Exception();
 
@@ -106,7 +106,7 @@ public class HydraEngineTests
     }
     
     [TestMethod]
-    public void Encrypt_throws_HydraException_on_zero_source_length()
+    public void Encrypt_throws_on_zero_source_length()
     {
         var tested = new Exception();
 
@@ -129,7 +129,7 @@ public class HydraEngineTests
     [TestMethod]
     [DataRow(64)]
     [DataRow(66)]
-    public void Encrypt_throws_HydraException_on_invalid_output_length(int length)
+    public void Encrypt_throws_on_invalid_output_length(int length)
     {
         var tested = new Exception();
 
@@ -152,7 +152,7 @@ public class HydraEngineTests
 
     [TestMethod]
     [DataRow(false)]
-    public void GetLen_throws_HydraException_if_buffer_length_is_zero(bool isPlain)
+    public void GetLen_throws_if_buffer_length_is_zero(bool isPlain)
     {
         var tested = new Exception();
 
@@ -174,7 +174,7 @@ public class HydraEngineTests
 
     [TestMethod]
     [DataRow(64, false)] // 0
-    public void GetLen_throws_HydraException_if_result_not_greater_than_zero(int length, bool isPlain)
+    public void GetLen_throws_if_result_not_greater_than_zero(int length, bool isPlain)
     {
         var tested = new Exception();
 
@@ -274,7 +274,7 @@ public class HydraEngineTests
 
     [TestMethod]
     [DataRow(64)] // correct is 65 (32 + 32 + 1)
-    public void Decrypt_throws_HydraException_on_invalid_source_length(int length)
+    public void Decrypt_throws_on_invalid_source_length(int length)
     {
         Span<byte> source = stackalloc byte[length];
         Span<byte> output = stackalloc byte[1];
@@ -297,7 +297,7 @@ public class HydraEngineTests
     
     [TestMethod]
     [DataRow(66, 0)] // correct is 2, not 0
-    public void Decrypt_throws_HydraException_on_invalid_output_length(int srcLen, int outLen)
+    public void Decrypt_throws_on_invalid_output_length(int srcLen, int outLen)
     {
         Span<byte> source = stackalloc byte[srcLen];
         Span<byte> output = stackalloc byte[outLen];
@@ -319,7 +319,7 @@ public class HydraEngineTests
     }
     
     [TestMethod]
-    public void Decrypt_throws_HydraException_if_nonce_is_modified()
+    public void Decrypt_throws_if_nonce_is_modified()
     {
         Span<byte> tampered = new byte[HydraTestVectors.CiphertextSha256.Length];
         HydraTestVectors.CiphertextSha256.CopyTo(tampered);
@@ -347,7 +347,7 @@ public class HydraEngineTests
     }
     
     [TestMethod]
-    public void Decrypt_throws_HydraException_if_signature_is_modified()
+    public void Decrypt_throws_if_signature_is_modified()
     {
         Span<byte> tampered = new byte[HydraTestVectors.CiphertextSha256.Length];
         HydraTestVectors.CiphertextSha256.CopyTo(tampered);
@@ -376,7 +376,7 @@ public class HydraEngineTests
     }
     
     [TestMethod]
-    public void Decrypt_throws_HydraException_if_encrypted_data_is_modified()
+    public void Decrypt_throws_if_encrypted_data_is_modified()
     {
         Span<byte> tampered = stackalloc byte[HydraTestVectors.CiphertextSha256.Length];
         HydraTestVectors.CiphertextSha256.CopyTo(tampered);

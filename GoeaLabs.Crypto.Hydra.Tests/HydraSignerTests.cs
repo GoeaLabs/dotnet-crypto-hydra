@@ -12,7 +12,7 @@ public class HydraSignerTests
     [TestMethod]
     [DataRow("add")]
     [DataRow("rem")]
-    public void Sha256Signer_throws_HydraException_on_invalid_signature_buffer_length(string act)
+    public void Sha256Signer_throws_on_invalid_signature_buffer_length(string act)
     {
         var len = act == "add" 
             ? Sha256Signer.SigLen + 1 
@@ -42,7 +42,7 @@ public class HydraSignerTests
     [TestMethod]
     [DataRow("add")]
     [DataRow("rem")]
-    public void Sha384Signer_throws_HydraException_on_invalid_signature_buffer_length(string act)
+    public void Sha384Signer_throws_on_invalid_signature_buffer_length(string act)
     {
         var len = act == "add" 
             ? Sha384Signer.SigLen + 1 
@@ -72,7 +72,7 @@ public class HydraSignerTests
     [TestMethod]
     [DataRow("add")]
     [DataRow("rem")]
-    public void Sha512Signer_throws_HydraException_on_invalid_signature_buffer_length(string act)
+    public void Sha512Signer_throws_on_invalid_signature_buffer_length(string act)
     {
         var len = act == "add" 
             ? Sha512Signer.SigLen + 1 
