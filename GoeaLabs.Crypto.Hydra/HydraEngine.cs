@@ -124,7 +124,7 @@ public class HydraEngine
         Rounds = rounds;
         Signer = signer;
 
-        Scheme = $"HYDRA{Rounds}{Signer.Scheme}";
+        Scheme = $"HYDRA{Rounds}{Signer.Scheme}.".ToUpper();
     }
 
     /// <summary>
