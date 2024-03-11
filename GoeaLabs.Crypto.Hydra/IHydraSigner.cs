@@ -22,16 +22,6 @@ namespace GoeaLabs.Crypto.Hydra;
 public interface IHydraSigner
 {
     /// <summary>
-    /// Error message for invalid hashing key (H-KEY) buffer length.
-    /// </summary>
-    public const string ErrSigKey = "Invalid hashing key (H-KEY) buffer length.";
-    
-    /// <summary>
-    /// Error message for invalid signature output buffer length.
-    /// </summary>
-    public const string ErrSigOut = "Invalid signature output buffer length.";
-    
-    /// <summary>
     /// Hashing scheme.
     /// </summary>
     public string Scheme { get; }

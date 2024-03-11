@@ -47,16 +47,6 @@ public enum HydraErrorCode
     ErrOutLen,
     
     /// <summary>
-    /// Invalid hashing key (H-KEY) buffer length.
-    /// </summary>
-    ErrSigKey,
-    
-    /// <summary>
-    /// Invalid signature output buffer length.
-    /// </summary>
-    ErrSigOut,
-    
-    /// <summary>
     /// Failed ciphertext signature verification.
     /// </summary>
     ErrVerify

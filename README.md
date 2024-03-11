@@ -150,17 +150,7 @@ public class MyCustomAlgo : IHydraSigner
 
     /// <inheritdoc/>
     public void GenSig(ReadOnlySpan<byte> src, ReadOnlySpan<byte> key, Span<byte> sig)
-    {
-        // Always validate 'sig' buffer length. Eg:
-        
-        //if (sig.Length != SigLen)
-        //    throw new HydraException(HydraErrCode.ErrSigOut, IHydraSigner.ErrSigOut);            
-        
-        // Validate 'key' buffer length, only if your algorithm needs a secret key. Eg:
-        
-        //if (key.Length != KeyLen)
-        //    throw new HydraException(HydraErrCode.ErrSigKey, IHydraSigner.ErrSigKey);
-        
+    {        
         // Hash the data in 'src' and write the output in 'sig'. 'key' is automatically 
         // populated by Hydra with 'KeyLen' cryptographically secure random bytes if 'KeyLen' > 0. 
     }

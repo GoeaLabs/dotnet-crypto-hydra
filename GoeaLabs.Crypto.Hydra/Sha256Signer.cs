@@ -37,11 +37,6 @@ public class Sha256Signer : IHydraSigner
     /// If the <paramref name="sig"/> buffer is not large enough to accomodate the
     /// computed signature.
     /// </exception>
-    public void GenSig(ReadOnlySpan<byte> src, ReadOnlySpan<byte> key, Span<byte> sig)
-    {
-        if (sig.Length != SigLen)
-            throw new HydraException(HydraErrorCode.ErrSigOut, IHydraSigner.ErrSigOut);
-        
-        _ = SHA256.TryHashData(src, sig, out _);
-    }
+    public void GenSig(ReadOnlySpan<byte> src, ReadOnlySpan<byte> key, Span<byte> sig) => 
+        SHA256.TryHashData(src, sig, out _);
 }
