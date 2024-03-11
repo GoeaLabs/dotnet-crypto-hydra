@@ -64,7 +64,6 @@ of any key beyond the secret key (X-KEY);
 
 - Apache 2.0 license;
 - Supports all .NET platforms, including WebAssembly;
-- Thoroughly tested;
 - Fully managed;
 - No unsafe code;
 - Simple API;
@@ -187,8 +186,8 @@ Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 
 ```
 
-| Method               | Bytes   | Mean          | Error      | StdDev     | Rank | Allocated |
-|--------------------- |-------- |--------------:|-----------:|-----------:|-----:|----------:|
+| Method               | Bytes   |          Mean |      Error |     StdDev | Rank | Allocated |
+|----------------------|---------|--------------:|-----------:|-----------:|-----:|----------:|
 | Hydra20Sha256Encrypt | 100     |      3.794 μs |  0.0083 μs |  0.0077 μs |    1 |         - |
 | Hydra20Sha384Encrypt | 100     |      3.850 μs |  0.0093 μs |  0.0082 μs |    2 |         - |
 | Hydra20Sha512Encrypt | 100     |      3.909 μs |  0.0089 μs |  0.0083 μs |    3 |         - |
@@ -212,8 +211,8 @@ Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 
 ```
 
-| Method               | Bytes   | Mean          | Error      | StdDev     | Rank | Allocated |
-|--------------------- |-------- |--------------:|-----------:|-----------:|-----:|----------:|
+| Method               | Bytes   |          Mean |      Error |     StdDev | Rank | Allocated |
+|----------------------|---------|--------------:|-----------:|-----------:|-----:|----------:|
 | Hydra20Sha384Decrypt | 100     |      2.823 μs |  0.0137 μs |  0.0121 μs |    1 |         - |
 | Hydra20Sha512Decrypt | 100     |      2.892 μs |  0.0124 μs |  0.0116 μs |    2 |         - |
 | Hydra20Sha256Decrypt | 100     |      2.930 μs |  0.0161 μs |  0.0151 μs |    3 |         - |
