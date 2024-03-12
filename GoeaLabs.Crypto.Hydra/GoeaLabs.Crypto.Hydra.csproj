@@ -11,8 +11,8 @@
         <Authors>GoeaLabs</Authors>
         <Description>Hydra Encryption Cipher for .NET.</Description>
         <Copyright>Copyright 2023, GoeaLabs</Copyright>
-        <PackageProjectUrl>https://github.com/goealabs/dotnet-hydra</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/goealabs/dotnet-hydra</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/goealabs/dotnet-crypto-hydra</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/goealabs/dotnet-crypto-hydra</RepositoryUrl>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>

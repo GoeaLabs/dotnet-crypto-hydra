@@ -1,7 +1,7 @@
 # HYDRA
 
-![GitHub](https://img.shields.io/github/license/GoeaLabs/dotnet-crypto-hydra?style=for-the-badge)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/GoeaLabs/dotnet-crypto-hydra?include_prereleases&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/goealabs/dotnet-crypto-hydra?style=for-the-badge)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/goealabs/dotnet-crypto-hydra?include_prereleases&style=for-the-badge)
 ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/GoeaLabs.Crypto.Hydra?style=for-the-badge)
 
 # Project description
